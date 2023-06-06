@@ -1,6 +1,5 @@
 import inquirer from 'inquirer';
 
-
 const questions = [
     {
         type: 'input',
@@ -14,6 +13,6 @@ const questions = [
     }
 ];
 
-export const promtUser = async () => {
+export const promptUser = async () => {
     return await inquirer.prompt(questions);
 };

@@ -1,10 +1,8 @@
 import { getFile, writeFile } from './readWritePromises.js';
-import { promtUser } from './promtUser.js';
-
-promtUser()
+import { promptUser } from './promptUser.js';
 
 const run = async () => {
-    const answers = await promtUser();
+    const answers = await promptUser();
     const file = await getFile("./users.json");
     const user = [...file, answers];
     await writeFile("./users.json", user);
