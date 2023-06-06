@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^9.2.7",
     "nodemon": "^2.0.22"
   }
 }
